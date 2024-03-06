@@ -4,6 +4,7 @@ from extrators.wework import Wework_Scrapper
 from extrators.web3 import Web3_Scrapper
 from flask import jsonify
 from werkzeug.exceptions import HTTPException
+import traceback
 
 app = Flask("JobScrapper")
 
