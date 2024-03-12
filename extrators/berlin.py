@@ -25,6 +25,8 @@ class Berlin_Scrapper():
 
         jobs = soup.find("ul", class_="jobs-list-items").find_all("li")
         #print(jobs)
+        if soup.find == None or soup.find == "":
+            return []
         for job in jobs:
             company_name = job.find("a", class_="bjs-jlid__b").text
             position = job.find("h4", class_="bjs-jlid__h").text
